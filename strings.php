@@ -103,8 +103,23 @@ $blogs =[
 $poppped = array_pop($blogs);
 //print_r($poppped);// ['title'=>'zelda hidden chests','author'=>'link','content'=>'lorem','likes' => 50]
 
+// Loops
 
+// foreach loop takes care of the length of the property implicitly
+$ninjas = ['shaun', 'ryu', 'yoshi'];
 
+// for($i =0; $i < count($ninjas); $i++){
+//    echo $ninjas[$i] . '<br/>';
+// }
+
+// this one is easier than the one above.
+// foreach($ninjas as $ninja){
+//    echo $ninja;
+// $i=0;
+// while($i < count($ninjas)){
+//    echo $ninjas[$i];
+//    $i ++;
+// }
 
 ?>
 

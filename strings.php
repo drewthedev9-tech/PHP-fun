@@ -121,6 +121,23 @@ $ninjas = ['shaun', 'ryu', 'yoshi'];
 //    $i ++;
 // }
 
+// comparisons booleans /////////////////////////// --- 
+// echo true;// = 1;
+// echo false; // = 0;
+// echo 5 > 10;
+// echo 5 == 10;
+// 5 !=10;
+// echo 5 <= 10;
+//echo 'shaun ' <'yoshi'; //1 because s comes before y  in alphabet.
+//echo 'shaun' > 'yoshi';
+//echo 'shaun' > 'Shaun'; // upper case letter is less than the
+//echo 'mario' == 'mario' //1
+
+//loose comparison vs strict comparison
+// echo 5 == '5' // sees these as the same. dpesnt tak into account the type of data.
+// echo 5 == '5' // does take into account the type of data. false
+
+
 ?>
 
 <!DOCTYPE html>

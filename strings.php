@@ -147,20 +147,28 @@ $blogs =[
 
 $likes =20;
 
+// foreach($blogs as $blog){
+//    if($blog['likes'] >15 && $blog['likes'] > 2){
+//       echo $blog['likes'] . '<br/>';
+//    }
+// }
+
+// if($price < 30){
+//    echo 'the condition is met';
+// } elseif($price < 20){
+//    echo 'elseif condition met';
+// }else{
+//    echo 'condition not met';
+// }
+
+// break and continue
 foreach($blogs as $blog){
-   if($blog['likes'] >15 && $blog['likes'] > 2){
-      echo $blog['likes'] . '<br/>';
+   if($blog['title'] === 'mario kart cheats'){
+   break;
    }
-}
 
-if($price < 30){
-   echo 'the condition is met';
-} elseif($price < 20){
-   echo 'elseif condition met';
-}else{
-   echo 'condition not met';
+   echo $blog['title'] . '< br/>';
 }
-
 
 ?>
 

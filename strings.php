@@ -29,7 +29,7 @@ $name = 'Mario';
 // echo strtolower($name);
 // built in functions.
 
-echo str_replace('M','w',$name);
+// echo str_replace('M','w',$name);
 
 // Numbers Tutorial 6///////
 
@@ -38,7 +38,7 @@ echo str_replace('M','w',$name);
 $radius = 25;
 $pi = 3.14;
 
-echo $pi * $radius ^2;
+// echo $pi * $radius ^2;
 
 // Tutorial 7 - arrays////////////////
 // indexed arrays//////////
@@ -73,7 +73,7 @@ $people3 = array_merge($peopleOne, $peopleTwo);
 // uses keys instead of indexes.
 
 $ninjaOne = ['shaun'=>'black belt', 'mario'=>'orange', 'luigi'=> 'brown'];
-echo $ninjaOne['mario'];// will output orange the value associated witn mario.
+// echo $ninjaOne['mario'];// will output orange the value associated witn mario.
 // print whole associative array.
 // print_r($ninjaOne);
 
@@ -81,11 +81,11 @@ echo $ninjaOne['mario'];// will output orange the value associated witn mario.
 $ninjaOne['toad'] ='pink';
 // print_r($ninjaOne);
 // count array associative
-echo count($ninjaOne);
+// echo count($ninjaOne);
 
 // merge associative arrays
-$ninjas3 = array_merge($peopleOne, $peopleTwo);
-print_r($ninjas3);
+// $ninjas3 = array_merge($peopleOne, $peopleTwo);
+// print_r($ninjas3);
 
 // multi dimensional arrays///////
 
@@ -136,6 +136,30 @@ $ninjas = ['shaun', 'ryu', 'yoshi'];
 //loose comparison vs strict comparison
 // echo 5 == '5' // sees these as the same. dpesnt tak into account the type of data.
 // echo 5 == '5' // does take into account the type of data. false
+
+// conditional statements/////////////
+
+$blogs =[
+   ['title'=>'mario partty','author'=> 'mario', 'content'=>'lorem', 'likes'=> 30 ],
+   ['title'=>'mario kart cheats','author'=>'toad','content'=>'lorem', 'likes'=> 25],
+   ['title'=>'zelda hidden chests','author'=>'link','content'=>'lorem','likes' => 50]
+];
+
+$likes =20;
+
+foreach($blogs as $blog){
+   if($blog['likes'] >15 && $blog['likes'] > 2){
+      echo $blog['likes'] . '<br/>';
+   }
+}
+
+if($price < 30){
+   echo 'the condition is met';
+} elseif($price < 20){
+   echo 'elseif condition met';
+}else{
+   echo 'condition not met';
+}
 
 
 ?>

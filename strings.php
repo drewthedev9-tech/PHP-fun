@@ -139,11 +139,7 @@ $ninjas = ['shaun', 'ryu', 'yoshi'];
 
 // conditional statements/////////////
 
-$blogs =[
-   ['title'=>'mario partty','author'=> 'mario', 'content'=>'lorem', 'likes'=> 30 ],
-   ['title'=>'mario kart cheats','author'=>'toad','content'=>'lorem', 'likes'=> 25],
-   ['title'=>'zelda hidden chests','author'=>'link','content'=>'lorem','likes' => 50]
-];
+
 
 $likes =20;
 
@@ -162,14 +158,66 @@ $likes =20;
 // }
 
 // break and continue
-foreach($blogs as $blog){
-   if($blog['title'] === 'mario kart cheats'){
-   break;
-   }
+// foreach($blogs as $blog){
+//    if($blog['title'] === 'mario kart cheats'){
+//    break;
+//    }
 
-   echo $blog['title'] . '< br/>';
+//    echo $blog['title'] . '< br/>';
+// }
+
+//fucntions///////////
+
+
+// $blogs =[
+//    ['title'=>'mario partty','author'=> 'mario', 'content'=>'lorem', 'likes'=> 30 ],
+//    ['title'=>'mario kart cheats','author'=>'toad','content'=>'lorem', 'likes'=> 25],
+//    ['title'=>'zelda hidden chests','author'=>'link','content'=>'lorem','likes' => 50]
+// ];
+
+
+// getting a property of some kind from a  variable in
+   // the square brackets needs curl braces around it.
+function formatProduct($product){
+   
+//   echo "{$product['name']} costs {$product['price']} to buy <br/>";
+   return "{$product['name']} costs {$product['price']} to buy <br/>";
+
 }
 
+// $formatted = formatProduct(['name'=>'gold star', 'price'=> 20]);
+// echo $formatted;
+
+// default value if there is no parmeter in
+// the calling of the function.
+// multiple parameters.
+function sayHello($name ='shaun', $time = 'morning'){
+   echo "good $time $name ";
+}
+// sayHello();// out put shaun
+// sayHello("yoshi", "night");
+
+// variable scope ///////////////
+// local
+function myFunc(){
+   // $price has local scope cant access outside of function.
+   // when you make  avariable inside of a function it will only have
+   // local scope.
+   $price = 10;
+   echo $price;
+}
+
+myFunc();
+// echo $price// wont work doesnt have access to local variable in above function.
+
+// global
+$name = 'mario';
+
+// function sayHello1(){
+//    // getting the global name from above. 
+//    global $name;
+//  echo "hello $name";
+// }
 ?>
 
 <!DOCTYPE html>

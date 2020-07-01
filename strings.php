@@ -211,12 +211,13 @@ myFunc();
 // echo $price// wont work doesnt have access to local variable in above function.
 
 // global
-$name = 'mario';
+$name = 'mari';
 
 // function sayHello1(){
 //    // getting the global name from above. 
 //    global $name;
 //  echo "hello $name";
+
 // }
 ?>
 

@@ -1,5 +1,24 @@
 <?php
 
+// isset checks if the variable has data in in it this case teh submit button.
+// if(isset($_GET['submit'])){
+//   // getting the value from globals $_GET[] of what the user inputs based on the name of the
+//   // input elements.
+//   echo $_GET['email'];
+//   echo $_GET['title'];
+//   echo $_GET['ingredients'];
+
+// }
+
+if(isset($_POST['submit'])){
+  // getting the value from globals $POST[] of what the user inputs based on the name of the
+  // input elements.
+  echo $_POST['email'];
+  echo $_POST['title'];
+  echo $_POST['ingredients'];
+
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +30,7 @@
     <h4 class="center">
     Add pizza
     </h4>
-    <form action="" class="white" action="" methods="">
+    <form action="" class="white" action="add.php" method="POST">
     <label>your email:</label>
     <input type="text" name="email">
     <label>Pizza Title:</label>

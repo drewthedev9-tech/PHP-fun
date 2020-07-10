@@ -11,11 +11,33 @@
 // }
 
 if(isset($_POST['submit'])){
-  // getting the value from globals $POST[] of what the user inputs based on the name of the
+  echo htmlspecialchars($_POST['title']);
+  echo htmlspecialchars($_POST['ingredients']);
+  // form validation////
+  // check email
+  if(empty($_POST['email'])){
+    echo " am email is required </br>";
+  } else{
+
+   // getting the value from globals $POST[] of what the user inputs based on the name of the
   // input elements.
-  echo $_POST['email'];
-  echo $_POST['title'];
-  echo $_POST['ingredients'];
+  // htmlspecial chars prtect against xss injections.
+  echo htmlspecialchars($_POST['email']);
+  }
+//  check title
+  if(empty($_POST['title'])){
+    echo " a title is required </br>";
+  } else{ // check title
+    echo htmlspecialchars($_POST['title']);
+  }
+ 
+ // check ingredient
+  if(empty($_POST['ingredients'])){
+    echo " at east one ingredient is required </br>";
+  } else{
+  echo htmlspecialchars($_POST['ingredients']);
+  }
+
 
 }
 
